@@ -26,7 +26,7 @@ _build = {
         base: _setting.path
       })
       .pipe(rename((path) => {
-        path.extname = '.wxml'
+        path.extname = _setting.template
       }))
       .pipe(gulp.dest(buildSrc))
   },

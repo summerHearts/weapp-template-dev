@@ -22,6 +22,8 @@ const author = pkg.author
 const version = pkg.version
 const homepage = pkg.homepage
 
+
+
 const banner = [
   '/*! ',
     `${title} `,
@@ -43,14 +45,14 @@ gulp.task('watch', ['build:dev'], function (file){
 gulp.task('build:dev', () => {
 	build.css(srcPath +'**/*.scss')
 	build.js(srcPath +'/**/*.js')
-	build.template(srcPath +'**/*.wxml')
-	build.assets(srcPath +'**/*.+(json|wxml|wxss|png|gif|jpeg)')
+	build.template(srcPath +'**/*.html')
+	build.assets(srcPath +'**/*.+(json|wxml|wxss|svg|png|gif|jpeg)')
 })
 gulp.task('build:pre', () => {
 	build.css(srcPath +'**/*.scss', 'pre')
 	build.js(srcPath +'**/*.js', 'pre')
 	build.template(srcPath +'**/*.html', 'pre')
-	build.assets(srcPath +'**/*.+(json|wxml|wxss|png|gif|jpeg)', 'pre')
+	build.assets(srcPath +'**/*.+(json|wxml|wxss|svg|png|gif|jpeg)', 'pre')
 })
 
 gulp.task('clean', () => gulp.src([devPath,buildPath])

@@ -1,0 +1,12 @@
+.msg-wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #FFF;
+    text-align: center;
+    min-width: 60px;
+    margin-left: -30px;
+    padding: 6px;
+    z-index: 99999;
+    background-color: rgba(0, 0, 0, .8)
+}

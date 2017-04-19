@@ -1,0 +1,32 @@
+{
+    "pages": [
+        "page/order/list/list"
+    ],
+    "window": {
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "全球购",
+        "navigationBarBackgroundColor": "#222222",
+        "backgroundColor": "#EEEEEE",
+        "backgroundTextStyle": "light",
+        "enablePullDownRefresh": true
+    },
+    "tabBar": {
+        "color": "#6e6d6b",
+        "selectedColor": "#FFF",
+        "borderStyle": "black",
+        "backgroundColor": "#222222",
+        "list": [{
+            "pagePath": "page/order/list/list",
+            "iconPath": "img/home.png",
+            "selectedIconPath": "img/home-on.png",
+            "text": "订单"
+        }]
+    },
+    "networkTimeout": {
+        "request": 99999,
+        "connectSocket": 99999,
+        "uploadFile": 99999,
+        "downloadFile": 99999
+    },
+    "debug": true
+}

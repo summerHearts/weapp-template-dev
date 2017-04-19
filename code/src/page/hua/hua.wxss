@@ -1,0 +1,228 @@
+page{
+    background-color:#ebebeb;
+    font-family:'微软雅黑'
+}
+.dialog__wrapper{
+    position: absolute;
+    left: 0;right: 0;top: 0;bottom:0rpx;
+    padding-left:20rpx;
+    padding-right:0rpx;
+    padding-bottom:0rpx;
+    overflow: auto;
+    box-sizing: border-box;
+    transition:all 0.2s;
+}
+.message__list__sendtime_wrapper{
+    position:relative;
+    width:100%;
+    padding:14rpx 56rpx 56rpx 38rpx;
+    text-align: center;
+    box-sizing:border-box;
+}
+.message__list__sendtime{
+    line-height:36rpx;
+    background-color:rgba(0,0,0,0.12);
+    border-radius:7rpx;
+    color:#fff;
+    display:inline-block;
+    min-height:36rpx;
+    font-size:26rpx;
+    padding:2rpx 20rpx;
+}
+.message__list{
+    margin-bottom:38rpx;
+    display:flex;
+    flex-direction:column;
+}
+.message__list__hd{
+    border:1px solid #ccc;
+    display:inline-block;
+    width:76rpx;
+    height:76rpx;
+    position:absolute;
+    background-color:#fff;
+}
+.message__list__hd image{
+    width:76rpx;
+    height:76rpx;
+}
+.message__list__bd{
+    width:auto;
+    max-width:518rpx;
+    display:inline-block;
+    position:relative;
+    padding-left:96rpx;
+    padding-right:96rpx;
+    text-align:left;
+}
+.message__list__bd .message__list__content{
+    background-color:#fff;
+    z-index:1;    
+    line-height:32rpx;
+    padding:23rpx;
+    border-radius:7rpx;
+    border:1px solid #ccc;
+    font-size:28rpx;
+    color:#000;
+    white-space:pre-line;
+    letter-spacing:1rpx;
+    display:block;
+    float:left;
+    min-height:36rpx;
+}
+.message__list__bd .message__list__arrow{
+    position:absolute;
+    border-bottom:1px solid #ccc;
+    border-left:1px solid #ccc;
+    width:16rpx;
+    height:16rpx;
+    z-index:2;
+    transform:rotate(45deg);
+    background-color:#fff;
+    margin-left:-8rpx;
+    margin-top:28rpx;
+}
+.message__list.me .message__list__bd .message__list__content{
+    background-color:#A0E75A;
+    text-align: left;
+    float:right;
+}
+.message__list.me .message__list__hd{
+    right:20rpx;
+}
+.message__list.me .message__list__bd .message__list__arrow{
+    transform:rotate(225deg);
+    right:86rpx;
+    margin-left:-1rpx;
+    background-color:#A0E75A;
+}
+.message__list__ft{
+    display: none;
+}
+.message__list .message__list__bd.image .message__list__content{
+    padding : 0;
+    background:none;    
+    overflow: hidden;
+}
+.message__list .message__list__bd.image .message__list__content image{
+    max-width:470rpx;margin:0;
+}
+.message__list.me .message__list__bd.image .message__list__arrow{
+    background:none !important;
+}
+.message__footer__btns{
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:rgba(255,255,255,0.93);
+    height:90rpx;
+    z-index:9;
+    border-top:1rpx solid #e2e2e2;
+    transition:all 0.15s;
+    overflow: hidden;
+}
+.message__footer__btns.text .message__footer__text{
+    display: block;
+    height:90rpx;
+}
+.message__footer__btns .message__footer_btn{
+    width:52rpx;
+    height:90rpx;
+    float: left;
+}
+.message__footer__btns .message__footer_btn image{
+    width:52rpx;
+    height:52rpx;
+    margin-top:20rpx;
+    margin-bottom:18rpx;
+}
+.message__footer__btns.text .message__footer__text .message__footer__input{
+    float:left;
+    width:517rpx;
+    height:66rpx;
+    margin-top:12rpx;
+    border-radius:7rpx;
+    border:1px solid #ddd;
+    color:#333;
+    overflow: hidden;
+    box-sizing:border-box;
+}
+.message__footer__btns.text .message__footer__text .message__footer__input textarea{
+    width:100%;
+    height:66rpx;
+    padding-top:10rpx;
+    padding-left:12rpx;
+    padding-right:26rpx;
+    padding-bottom:10rpx;
+    font-size:34rpx;
+    min-height:66rpx;
+    box-sizing:border-box;
+}
+.message__footer__audio_btn{
+    height:61rpx;
+    line-height:56rpx;
+    font-size:32rpx;
+    text-align: center;
+    padding-top:0rpx;
+    background-color: #aaa;
+}
+.message__footer__btns.showBottomBtn{
+    height:496rpx;
+}
+.message__footer__morebtns{
+    height:406rpx;
+}
+.message__footer__more__btns{
+    height:360rpx;
+    border-top:1px solid #eee;
+}
+.message__footer__more__btn{
+    border:1rpx solid #ddd;
+    border-radius:16rpx;
+    float:left;
+    width:108rpx;
+    height:108rpx;
+    margin-top:28rpx;
+    margin-left:62rpx;
+    margin-bottom:44rpx;
+    background-color:rgba(255,255,255,1);
+    position:relative;
+    text-align: center;
+}
+.message__footer__more__btn image{
+    width:53rpx;
+    height:53rpx;
+    margin-top:27rpx;
+}
+.message__footer__more__btn text{
+    position:absolute;
+    left:0;right:0;bottom:0rpx;
+    margin-bottom:-44rpx;
+    text-align: center;
+    line-height:44rpx;
+    font-size:26rpx;
+    height:44rpx;
+    color:#888;
+}
+#bottomline{
+    position: fixed;
+    height:1rpx;
+    background:none;
+    left:0;
+    right:0;
+}
+.message__list__audio{
+    position: absolute;
+    width:40rpx;height:40rpx;
+    left:130rpx;
+}
+.me .message__list__audio{
+    left:auto;
+    transform: rotate(180deg);
+    right:130rpx;
+}
+.message__list__audio__length{
+    position: absolute;
+    color:#aaa;
+}

@@ -1,0 +1,25 @@
+.left-wrap{
+    position:relative;
+    width: 720rpx;
+    /*overflow: hidden;*/
+}
+.showview{
+    background-color: orangered;
+    color: #fff;
+    height: 100rpx;
+    line-height: 100rpx;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    margin-left: 0;
+}
+.hideview{
+    position: absolute;
+    background-color: orange;
+    color: #fff;
+    height: 100rpx;
+    line-height: 100rpx;
+    width: 100px;
+    right: 0
+}
+

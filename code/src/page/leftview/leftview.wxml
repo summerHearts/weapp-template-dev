@@ -1,0 +1,4 @@
+<view class="left-wrap">
+    <view class="showview" animation="{{animation}}" style="margin-left:{{marginLeft}}px" bindtouchstart="start" bindtouchmove="move" bindtouchend="end">左滑动的区域</view>
+    <view class="hideview">显示区域</view>
+</view>

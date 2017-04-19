@@ -1,0 +1,41 @@
+{
+  "name": "weapp-template",
+  "version": "0.0.1",
+  "description": "",
+  "main": "gulpfile.babel.js",
+  "scripts": {
+    "start": "npm run clean & gulp watch",
+    "build": "npm run clean & npm run pre",
+    "clean": "gulp clean",
+    "pre": "gulp build:pre",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Julian",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-base64": "^0.1.3",
+    "gulp-changed": "^2.0.0",
+    "gulp-css-rework-url": "^0.1.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-replace": "^0.5.4",
+    "gulp-watch": "^4.3.11",
+    "gutil": "^1.6.4",
+    "leancloud-realtime": "^3.4.1",
+    "stream-combiner2": "^1.1.1",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-header": "^1.8.8",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  }
+}

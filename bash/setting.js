@@ -3,11 +3,11 @@ _src = 'code/src'
 let _devPath = 'code/dev'
 let _distPath = 'code/build'
 _setting = {
-	path: _src,
-  template:"wxml",
-	devPath: _devPath,
-  devRepUrl:"http://test.storage.6city.com/sp/",
-  buildRepUrl:"https://m.6city.com/sp/",
+  path: _src,
+  template: ".wxml",
+  devPath: _devPath,
+  devRepUrl: "http://test.storage.6city.com/sp/",
+  buildRepUrl: "https://m.6city.com/sp/",
   buildPath: _distPath,
   watchFiles: ['code/src/**/*.*']
 }
